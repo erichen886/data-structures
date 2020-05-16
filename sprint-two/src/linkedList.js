@@ -8,6 +8,10 @@ var LinkedList = function() {
   list.counter = 0;
   var initiated = false;
 
+  var storage = [];
+      // {'head': valuehead, 'tail':valuetail, '0': newnode0,'1': newnode1};
+
+
   list.addToTail = function(value) {
     //  create new node instance with value
     var newNode = Node(value);
